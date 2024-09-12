@@ -29,6 +29,9 @@ def main():
     print(f"{total_files} 個のファイルを連番リネームしました。")
 
 
-main()
-
-
+while True:
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("終了します")
+        break
